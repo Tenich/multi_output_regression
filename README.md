@@ -12,3 +12,6 @@ In this project, a group of students will explore the state of the art on multi-
 - http://archive.ics.uci.edu/ml/datasets/Solar+Flare
 - https://www.kaggle.com/c/online-sales
 - https://www.kaggle.com/c/mercari-price-suggestion-challenge
+
+## References
+- [A survey on multi-output regression](http://cig.fi.upm.es/articles/2015/Borchani-2015-WDMKD.pdf), Hanen Borchani et al. 2015
