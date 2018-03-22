@@ -21,8 +21,10 @@ B_DIR = './data/mtr-datasets/'
 def load_arff_dataset(arff_path, n_targets):
     data, _ = loadarff(arff_path)
     df = pd.DataFrame(data=data)
-    X = df[df.columns[:-n_targets]].copy()
-    y = df[df.columns[-n_targets:]].copy()
+    df.fillna(0, inplace=True)
+    
+    X = df[df.columns[:-n_targets]].as_matrix()
+    y = df[df.columns[-n_targets:]].as_matrix()
     
     return X, y
 
